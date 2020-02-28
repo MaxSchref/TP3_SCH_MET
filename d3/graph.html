@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard MET-SCH</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+  <body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <div class="nav-side-menu">
+        <div class="brand">Météo Février 1999</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+            <div class="menu-list">
+
+                <ul id="menu-content" class="menu-content collapse out">
+
+                    <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                      <a href="#"><i class="fa fa-bar-chart"></i>Graphiques<span class="arrow"></span></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="products">
+                        <li><a href="./index.html">Température</a></li>
+                        <li><a href="./index.html">Pluviométrie</a></li>
+                        <li><a href="#">Par Jour et par Station</a></li>
+
+                    </ul>
+                    <li data-toggle="collapse" data-target="#service" class="collapsed">
+                      <a href="#"><i class="fa fa-globe fa-lg"></i> Cartes <span class="arrow"></span></a>
+                    </li>
+
+                    <ul class="sub-menu collapse" id="service">
+                      <li><a href="./carte.html">Météo France</a></li>
+                    </ul>
+
+                     <li>
+                      <a href=./groupe.html>
+                      <i class="fa fa-users fa-lg"></i> Groupe
+                      </a>
+                    </li>
+                </ul>
+         </div>
+    </div>
+  <center>
+
+  <div class="labelselect">
+  <label for="selectDay">Sélectionnez la date</label>
+		<SELECT id="selectDay" onchange="DrawAll()">
+		<OPTION>1
+		<OPTION>2
+		<OPTION>3
+		<OPTION>4
+		<OPTION>5
+		<OPTION>6
+		<OPTION>7
+		<OPTION>8
+		<OPTION>9
+		<OPTION>10
+		<OPTION>11
+		<OPTION>12
+		<OPTION>13
+		<OPTION>14
+		<OPTION>15
+		<OPTION>16
+		<OPTION>17
+		<OPTION>18
+		<OPTION>19
+		<OPTION>20
+		<OPTION>21
+		<OPTION>22
+		<OPTION>23
+		<OPTION>24
+		<OPTION>25
+		<OPTION>26
+		<OPTION>27
+		<OPTION>28
+		</SELECT>
+		 <label for="selectStation">Sélectionnez la station</label>
+
+		<SELECT id="selectStation" onchange="DrawAll()">
+		</select>
+
+	</div>
+  <div class="GraphTemp2">
+	<svg width="600" height="500" id="GraphTemp2"></svg>
+  </div>
+  <div class="GraphPrecip2">
+	<svg width="600" height="500" id="GraphPrecip2"></svg>
+  </div>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="js/script_graph2.js"></script>
+  </body>
+</html>

@@ -6,6 +6,19 @@
 .GraphPrecip {
   margin-left: 35%;
 }
+.GraphTemp2 {
+  margin-left: 25%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.GraphPrecip2 {
+  margin-left: 25%;
+}
+
+.labelselect {
+  margin-left: 25%;
+  margin-top: 5%;
+}
 
 .contentgroup {
   margin-left: 25%;

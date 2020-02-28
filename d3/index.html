@@ -20,12 +20,7 @@
 
         <div class="menu-list">
 
-            <ul id="menu-content" class="menu-content collapse out"><!--
-                <li>
-                  <a href="index.html">
-                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
-                  </a>
-                </li>-->
+            <ul id="menu-content" class="menu-content collapse out">
 
                 <li  data-toggle="collapse" data-target="#products" class="collapsed active">
                   <a href="#"><i class="fa fa-bar-chart"></i>Graphiques<span class="arrow"></span></a>
@@ -33,13 +28,15 @@
                 <ul class="sub-menu collapse" id="products">
                     <li><a href="#GraphTemp">Température</a></li>
                     <li><a href="#GraphPrecip">Pluviométrie</a></li>
+                    <li><a href="./graph.html">Par Jour et par Station</a></li>
+
                 </ul>
                 <li data-toggle="collapse" data-target="#service" class="collapsed">
                   <a href="#"><i class="fa fa-globe fa-lg"></i> Cartes <span class="arrow"></span></a>
                 </li>
 
                 <ul class="sub-menu collapse" id="service">
-                  <li><a href="./carte.html">Météo par jour</a></li>
+                  <li><a href="./carte.html">Météo France</a></li>
                 </ul>
 
                  <li>
@@ -50,7 +47,7 @@
             </ul>
      </div>
 </div>
-      <script src="js/ancre.js"></script>
+    <script src="js/ancre.js"></script>
 
       <div class="GraphTemp">
         <svg width="600" height="500" id="GraphTemp"></svg>
@@ -62,6 +59,7 @@
 
       <script src="https://d3js.org/d3.v4.min.js"></script>
       <script src="js/script_graph.js"></script>
+      <!--><script src="js/script_graph2.js"></script>-->
 
 </body>
 </html>
