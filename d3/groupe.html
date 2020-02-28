@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard MET-SCH</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+<div class="nav-side-menu">
+    <div class="brand">Météo Février 1999</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+        <div class="menu-list">
+
+            <ul id="menu-content" class="menu-content collapse out">
+
+              
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-bar-chart"></i>Graphiques<span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="products">
+                    <li><a href="./index.html">Température</a></li>
+                    <li><a href="./index.html">Pluviométrie</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Cartes <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="service">
+                  <li><a href="./carte.html">Météo par jour</a></li>
+                </ul>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Groupe
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>
+<div class="contentgroup"><center>
+
+       Dashboard Météo Février 1999<br><br>
+
+       TP de DataViz<br><br>
+
+       METTENDORF Hugo - SCHREFHEERE Maxime<br>
+       Bachelor 3
+     <cente></div>
+
+      <script src="https://d3js.org/d3.v5.min.js"></script>
+      <script src="js/carte2.js"></script>
+
+</body>
+</html>
